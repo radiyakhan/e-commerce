@@ -4,17 +4,14 @@ import SlugComponents from "@/components/ui/SlugComponents";
 import { FiMinus, FiPlus } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoBagHandleOutline } from "react-icons/io5";
-import { MdShoppingCartCheckout } from "react-icons/md";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { useAppSelector } from "../../store/hooks";
 import { useState } from "react";
-import { addToCart } from "@/app/store/features/cart";
 import AddToCartToastify from "@/components/AddToCartToastify";
 import Link from "next/link";
 
 const Slugpage = ({params}:{params:{slug:string}}) => {
     const products = useAppSelector((state)=>state.product)
   const slug = products.filter((val)=>val.slug == params.slug);
-  const dispatch = useAppDispatch();
   const [cartItem, setCartItem] = useState({
         id:slug[0].id,
         title: slug[0].title,

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const SlugComponents = ({
   image,
 }: string | string[] | StaticImageData | any) => {
-  const [path, setPath] = useState("");
+  const [path] = useState("");
    
   return (
     <div>

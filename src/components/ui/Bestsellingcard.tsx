@@ -2,7 +2,6 @@ import React from 'react'
 import Image from "next/image";
 import { Button } from "./button";
 import { IoBagHandleOutline } from "react-icons/io5";
-import { MdShoppingCartCheckout } from "react-icons/md";
 import Link from 'next/link';
 import BestSellingAddToCart from '../BestSellingAddToCart';
 
