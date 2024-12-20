@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import CardCart from "@/components/ui/CardCart";
 import { useAppSelector } from "../store/hooks";
+import Link from "next/link";
 
 const CardPage = () => {
   const cart = useAppSelector((state) => state.cart);
@@ -49,9 +50,10 @@ const CardPage = () => {
             {/* divider */}
             <div className="divider mt-0 mb-1"></div>
             {/* checkout button */}
+            <Link href={'/payment'}>
             <Button className=" text-white  group w-full bg-mycolorblue2/85 border-0 focus:outline-none hover:bg-mycolorblue rounded">
               Checkout
-            </Button>
+            </Button></Link>
           </div>
         </div>
       </div>
