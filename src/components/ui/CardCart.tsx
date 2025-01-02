@@ -20,7 +20,7 @@ const CardCart = () => {
           >
             {/* image */}
             <Image
-              src={Item.image}
+              src={Item.image[0]}
               alt={Item.title}
               width={80}
               height={80}
