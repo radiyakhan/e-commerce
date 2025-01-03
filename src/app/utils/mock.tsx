@@ -195,7 +195,7 @@ export const product: Product[] = [
   },
   {
     id: 17,
-    image: ["/Alkaram/1.jpg"],
+    image: ["/alkaram/1.jpg"],
     price: 5999,
     category: "Alkaram",
     size: ["S", "M", "L", "XL"],
